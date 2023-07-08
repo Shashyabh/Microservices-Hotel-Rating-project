@@ -1,16 +1,26 @@
 # Spring Boot Microservices Project
+
 ### This repository contains a Spring Boot microservices project for a hotel management application. 
 ### The project utilizes various microservices to handle different functionalities of the application. 
 ### The microservices included in this project are as follows:
 
-## ApiGateway: Serves as the entry point for the application, routing requests to the appropriate microservices.
-## ConfigServer: Manages the centralized configuration for all microservices.
-## HotelService: Handles hotel-related operations such as managing hotel information and room availability.
-## RatingService: Manages ratings and reviews for hotels.
-## ServiceRegistory: Registers and tracks the available services in the system.
-## UserService: Handles user management and authentication.
+### ApiGateway: 
+  Serves as the entry point for the application, routing requests to the appropriate microservices.
+### ConfigServer:
+  Manages the centralized configuration for all microservices.
+### HotelService:
+  Handles hotel-related operations such as managing hotel information and room availability.
+### RatingService:
+  Manages ratings and reviews for hotels.
+### ServiceRegistory:
+  Registers and tracks the available services in the system.
+### UserService:
+  Handles user management and authentication.
+
 
 ## Technologies Used
+
+
 ### The project utilizes the following technologies and frameworks:
 
 ### Java
@@ -58,17 +68,19 @@ To run the microservices locally, follow these steps:
 ### Configure the necessary properties in the configuration files of each microservice. For example, configure the database connection details, port numbers, and other environment-specific settings.
 
 Build the project using Maven:
-```
+
 shell
 Copy code
+```
 cd springboot-microservices-project
 mvn clean install
 ```
 ### Start each microservice individually by navigating into the respective microservice directory and running the following command:
 
-```
+
 shell
 Copy code
+```
 mvn spring-boot:run
 ```
 ### Start the microservices in the following order:
